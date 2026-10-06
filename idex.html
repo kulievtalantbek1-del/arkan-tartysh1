@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аркан Тартыш</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>🪢 АРКАН ТАРТЫШ 🪢</h1>
+        <p class="subtitle">Ким күчтүү? Сынап көр!</p>
+
+        <div class="top-panel">
+            <div class="score blue">
+                🔵 1-ОЮНЧУ
+                <span id="score1">0</span>
+            </div>
+
+            <div class="timer">
+                ⏱️ <span id="timer">30</span>
+            </div>
+
+            <div class="score red">
+                2-ОЮНЧУ 🔴
+                <span id="score2">0</span>
+            </div>
+        </div>
+
+        <div class="field">
+
+            <div class="player player1">
+                <div class="person">🧑</div>
+                <div class="name">1-ОЮНЧУ</div>
+            </div>
+
+            <div class="rope-area">
+
+                <div class="finish left-finish"></div>
+                <div class="finish right-finish"></div>
+
+                <div class="rope" id="rope">
+                    <div class="rope-line"></div>
+                    <div class="flag">🏁</div>
+                </div>
+
+            </div>
+
+            <div class="player player2">
+                <div class="person">🧑</div>
+                <div class="name">2-ОЮНЧУ</div>
+            </div>
+
+        </div>
+
+        <div class="progress-container">
+
+            <div class="progress-box">
+                <div class="progress-title">
+                    🔵 1-ОЮНЧУ
+                </div>
+                <div class="progress">
+                    <div id="progress1"></div>
+                </div>
+            </div>
+
+            <div class="progress-box">
+                <div class="progress-title">
+                    🔴 2-ОЮНЧУ
+                </div>
+                <div class="progress">
+                    <div id="progress2"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="message" class="message">
+            Оюн башталды!
+        </div>
+
+        <div class="controls">
+
+            <button id="pullLeft" class="pull blue-btn">
+                🔵 ТАРТ!
+                <small>SPACE</small>
+            </button>
+
+            <button id="pullRight" class="pull red-btn">
+                🔴 ТАРТ!
+                <small>ENTER</small>
+            </button>
+
+        </div>
+
+        <div class="menu-buttons">
+            <button id="restart">🔄 Кайра баштоо</button>
+            <button id="pause">⏸️ Токтотуу</button>
+        </div>
+
+        <div class="instructions">
+            <h2>🎮 Башкаруу</h2>
+            <p>🔵 1-оюнчу — <b>SPACE</b> баскычын басат</p>
+            <p>🔴 2-оюнчу — <b>ENTER</b> баскычын басат</p>
+            <p>⏱️ Оюнга 30 секунд берилет</p>
+        </div>
+
+    </div>
+
+    <div id="winnerModal" class="modal">
+        <div class="modal-content">
+            <div id="winnerEmoji">🏆</div>
+            <h2 id="winnerText">1-ОЮНЧУ ЖЕҢДИ!</h2>
+            <button id="modalRestart">🔄 Кайра ойноо</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
